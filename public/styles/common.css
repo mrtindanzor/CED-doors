@@ -1,0 +1,38 @@
+@font-face {
+  font-family: poppins-light;
+  src: url('/fonts/Poppins/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url('/fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: alice;
+  src: url('/fonts/Alice/Alice-Regular.ttf');
+}
+@font-face {
+  font-family: acolonica;
+  src: url('/fonts/Aclonica/Aclonica-Regular.ttf');
+}
+:root{
+  --primary: green;
+  --fourth: yellow;
+  --secondary: red;
+  --secondary-a: tomato;
+  --white: white;
+  --black: black;
+  --darker: rgba(0, 0, 0, 0.829);
+  --dark: rgba(0, 0, 0, 0.808);
+
+  --first-s: 12px;
+  --second-s: 16px;
+  --third-s: 20px;
+  --fourth-s: 25px;
+  --fifth-s: 30px;
+  --sixth-s: 40px; 
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: poppins-light;
+}
