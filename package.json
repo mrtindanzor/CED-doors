@@ -1,0 +1,30 @@
+{
+  "name": "ced-doors",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/mrtindanzor/CED-doors#readme",
+  "bugs": {
+    "url": "https://github.com/mrtindanzor/CED-doors/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtindanzor/CED-doors.git"
+  },
+  "license": "ISC",
+  "author": "Mr. Tindanzor Simon",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon --ignore ./public",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.7.0"
+  }
+}

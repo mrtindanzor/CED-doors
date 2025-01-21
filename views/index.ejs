@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles/reuse.css">
+  <link rel="stylesheet" href="/styles/common.css">
+  <% if(locals.style){ %>
+    <link rel="stylesheet" href="/styles/<%= locals.style %>.css">
+  <% } %>
+</head>
+<body>
+  
+  <script src="/scripts/common.js"></script>
+  <% if(locals.script){ %>
+    <script src="/scripts/<%= locals.script %>.js"></script>
+  <% } %>
+  
+</body>
+</html>
