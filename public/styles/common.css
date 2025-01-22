@@ -38,6 +38,9 @@
   user-select: none;
   font-family: poppins-light;
 }
+header .cart-btn{
+  width: 30px;
+}
 nav .section.active{
   display: flex;
   left: 50%;
