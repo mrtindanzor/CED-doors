@@ -5,10 +5,10 @@ for(const sectionTitle of navSectionTitles){
   const sectionMenu = section.querySelector('ul')
   sectionTitle.addEventListener('click', function(){
     navSectionTitles.forEach(el => {
-      const section = sectionTitle.parentElement
+      const section = el.parentElement
       const sectionMenu = section.querySelector('ul')
-      sectionMenu.classList.contains('dp-f fl-dr-c gap-20') ?  sectionMenu.classList.remove('dp-f fl-dr-c gap-20') : ''
+      sectionMenu.classList.contains('active') ? sectionMenu.classList.remove('active') : ''
     })
-    sectionMenu.classList.contains('dp-n') ? (sectionMenu.classList.remove('dp-n') , sectionMenu.classList.add('dp-f fl-dr-c gap-20')) : sectionMenu.classList.add('dp-n')
+    sectionMenu.classList.contains('active') ? sectionMenu.classList.remove('active') : sectionMenu.classList.add('active')
   })
 }

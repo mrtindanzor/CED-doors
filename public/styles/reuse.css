@@ -123,6 +123,18 @@
 .pos-st{
   position: sticky;
 }
+.top-0{
+  top: 0;
+}
+.top-10{
+  top: 10px;
+}
+.top-100{
+  top: 100%;
+}
+.top-110{
+  top: calc(100% + 10px);
+}
 .dp-f{
   display: flex;
 }
@@ -364,6 +376,12 @@
 }
 .bg-secondary-a{
   background-color: var(--secondary-a) !important;
+}
+.bg-dark{
+  background-color: var(--dark);
+}
+.bg-darker{
+  background-color: var(--darker);
 }
 .clr-white{
   color: var(--white) !important;

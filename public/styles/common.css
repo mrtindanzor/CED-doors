@@ -34,5 +34,11 @@
 *{
   margin: 0;
   padding: 0;
+  user-select: none;
   font-family: poppins-light;
+}
+nav .section.active{
+  display: flex;
+  left: 50%;
+  transform: translate(-50%, 20px);
 }
