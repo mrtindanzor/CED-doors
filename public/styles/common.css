@@ -34,11 +34,17 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   user-select: none;
   font-family: poppins-light;
 }
 nav .section.active{
   display: flex;
   left: 50%;
-  transform: translate(-50%, 20px);
+  transform: translate(-50%, 10px);
+
+  & a:hover{
+    color: var(--primary) !important;
+    min-width: fit-content;
+  }
 }

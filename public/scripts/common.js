@@ -13,3 +13,13 @@ for(const sectionTitle of navSectionTitles){
     sectionMenu.classList.contains('active') ? sectionMenu.classList.remove('active') : sectionMenu.classList.add('active')
   })
 }
+
+document.body.addEventListener('click', function(e){
+  if(e.target !== navSectionTitles[0] && e.target !== navSectionTitles[1]){
+    navSectionTitles.forEach(el => {
+      const newSection = el.parentElement
+      const newSectionMenu = newSection.querySelector('ul')
+      newSectionMenu.classList.contains('active') ? newSectionMenu.classList.remove('active') : ''
+    })
+  }
+})

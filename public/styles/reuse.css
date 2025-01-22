@@ -144,6 +144,12 @@
 .dp-n{
   display: none;
 }
+.fl-wp-w{
+  flex-wrap: wrap;
+}
+.fl-wp-nw{
+  flex-wrap: nowrap;
+}
 .fl-dr-c{
   flex-direction: column;
 }
@@ -159,8 +165,11 @@
 .fl-a-s-b{
   align-items: space-between;
 }
-.fl-a-s-a{
+.fl-a-s-e{
   align-items: space-between;
+}
+.fl-a-s-a{
+  align-items: space-evenly;
 }
 .fl-a-start{
   align-items: start;
@@ -173,6 +182,9 @@
 }
 .fl-j-s-a{
   justify-content: space-between;
+}
+.fl-j-s-e{
+  justify-content: space-evenly;
 }
 .fl-j-start{
   justify-content: start;

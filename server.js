@@ -1,7 +1,7 @@
 const express = require('express')
 const routers = require('./routers/routers')
-const dotenv = require('dotenv').config()
-const PORT = process.env.PORT || 4000
+const { dotenv, ping } = require('./essentials')
+const PORT = dotenv.PORT || 4000
 
 const app = express()
 
@@ -11,4 +11,5 @@ app.set('views', './views')
 app.set('view engine', 'ejs')
 
 app.use(routers)
+ping()
 app.listen(PORT, function(){ console.log('server started on port',PORT)})
