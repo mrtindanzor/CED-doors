@@ -42,6 +42,7 @@ nav .section.active{
   display: flex;
   left: 50%;
   transform: translate(-50%, 10px);
+  z-index: 99;
 
   & a:hover{
     color: var(--primary) !important;
