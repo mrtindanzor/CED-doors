@@ -18,6 +18,9 @@
 }
 .item-wrapper li img{
  object-fit: contain;
- width: 280px;
- /* transform: rotate(-90deg); */
+ width: 300px;
+ height: 300px;
+ transform: rotate(-90deg);
+ image-rendering: optimizeQuality;
+ image-orientation: from-image;
 }
