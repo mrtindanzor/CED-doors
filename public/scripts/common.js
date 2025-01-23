@@ -27,4 +27,5 @@ document.body.addEventListener('click', function(e){
       newSectionMenu.classList.contains('active') ? newSectionMenu.classList.remove('active') : ''
     })
   }
+  if(e.target !== cart && !cartBtn.contains(e.target) && e.target !== cartBtn && !cart.contains(e.target)) cart.classList.remove('active')
 })
