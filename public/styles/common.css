@@ -38,8 +38,28 @@
   user-select: none;
   font-family: poppins-light;
 }
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 header .cart-btn{
   width: 30px;
+}
+cart{
+  transition: 0.3s ease-in;
+  height: calc(100vh - 70px);
+  width: min(500px, 80vw);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  transform: translateX(calc(100% + 20px));
+
+    &.active{
+      transform: translate(0);
+      transition: 0.2s ease-out;
+  }
 }
 nav .section.active{
   display: flex;
